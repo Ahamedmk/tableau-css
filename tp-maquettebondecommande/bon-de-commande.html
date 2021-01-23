@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Maquette de bon de commande">
+    <title>Maquette de bon de commande</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      div {
+        text-align: right;
+      }
+      
+      body {
+          height: 100%;
+      }
+  
+      caption {
+        caption-side: bottom;
+        text-align: right;
+      }
+  
+      tbody tr:nth-child(odd) {
+          background-color: gainsboro;
+      }
+      tbody tr:nth-child(even) {
+          background-color: ghostwhite;
+      }
+  
+      table {
+          table-layout: fixed;
+          width: 100%;
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+      tr {
+          background-color: #f8f6ff
+      }
+      th, td {
+          padding-right: 5%;
+          text-align: center;
+          border: 1px solid black;
+          letter-spacing: 1px;
+      }
+      th {
+          font-size: 18px;
+          color: #fff;
+          background-color: #393939;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          text-transform: capitalize;
+          letter-spacing: 2px;
+  
+      }
+      td {
+          font-size: 18px;
+          color: #000000;
+          line-height: 1.4;
+          padding-top: 16px;
+          padding-bottom: 16px;
+      }
+  
+      tfoot th {
+          text-align: right;
+      }
+  </style>
+  </head>
+  <body>
+      <table>
+          <thead>
+              <tr>
+                  <th>Produits</th>
+                  <th>Quantités</th>
+                  <th>Prix unitaire</th>
+                  <th>prix</th>
+                  <th>information</th>
+              </tr>
+            </thead>
+          <tbody>
+              <tr>
+                  <td>Imac 17 pouces</td>
+                  <td>1</td>
+                  <td>2000 €</td>
+                  <td>4000 €</td>
+                  <td rowspan="3">Une promotion de 5% a été appliqué sur tous les produits</td>
+              </tr>
+              <tr>
+                <td>Pack Office 365</td>
+                <td>1</td>
+                <td>99.99 €</td>
+                <td>99.99 €</td>
+               </tr>
+               <tr>
+                <td>Iphone 12</td>
+                <td>20</td>
+                <td>1000</td>
+                <td>20 000 €</td>
+               </tr>
+           </tbody>
+
+        <tfoot> 
+            <tr>
+                <th colspan="3">Total HT</th>
+                <td colspan="2">24 099.99 €</td>
+            </tr>
+            <tr>
+                <th colspan="2">Taxe</th>
+                <td>20%</td>
+                <td colspan="2">17</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total HT</th>
+                <td colspan="2">24 099.99 €</td>
+            </tr>
+        </tfoot>
+        </table>
+        <div>Amazon - bon de commande n°256</div>
+    </body>
+</html>
